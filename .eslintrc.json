@@ -1,0 +1,25 @@
+{
+  "extends": ["standard-with-typescript"],
+  "parserOptions": {
+    "project": ["./tsconfig.eslint.json"]
+  },
+  "rules": {
+    "@typescript-eslint/strict-boolean-expressions": "off",
+    "@typescript-eslint/consistent-type-imports": "off",
+    "@typescript-eslint/no-unsafe-argument": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-floating-promises": "off",
+    "@typescript-eslint/no-misused-promises": "off",
+    "@typescript-eslint/unbound-method": "off",
+    "@typescript-eslint/no-namespace": "off"
+  },
+  "ignorePatterns": [
+    "dist/",
+    "node_modules/",
+    "*.config.js",
+    "*.config.cjs",
+    "*.config.ts",
+    "*.config.mts",
+    "*.config.cts"
+  ]
+}
