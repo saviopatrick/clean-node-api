@@ -8,9 +8,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings=0"
+    "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings=0",
+    "prepare": "husky"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@types/node": "^24.3.1",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
@@ -19,11 +22,8 @@
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-promise": "^6.6.0",
-    "git-commit-msg-linter": "^5.0.8",
     "husky": "^9.1.7",
+    "lint-staged": "^16.1.6",
     "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "lint-staged": "^16.1.6"
   }
 }
