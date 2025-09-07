@@ -8,3 +8,7 @@ export const forBidden = (error: Error): httpResponse => ({
   statusCode: 403,
   body: error
 })
+export const notFound = (error: Error): httpResponse => ({
+  statusCode: 404,
+  body: error
+})
