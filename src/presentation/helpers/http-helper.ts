@@ -24,3 +24,7 @@ export const created = (data: any): httpResponse => ({
   statusCode: 201,
   body: data
 })
+export const noContent = (): httpResponse => ({
+  statusCode: 204,
+  body: null
+})
