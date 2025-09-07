@@ -3,3 +3,4 @@ dist
 !jest.config.ts
 !*.config.ts
 !*.config.js
+coverage

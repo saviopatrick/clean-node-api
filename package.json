@@ -7,10 +7,12 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
+    "test:verbose": "jest --passWithNoTests --runInBand",
+    "test:unit": "npm test -- --watch -c jest-unit-config.ts",
+    "test:integration": "npm test -- --watch -c jest-integration-config.ts",
+    "test:staged": "npm test -- --findRelatedTests",
+    "test:ci": "npm test -- --coverage",
     "lint": "eslint . --ext .ts,.tsx --report-unused-disable-directives --max-warnings=0",
     "prepare": "husky"
   },
