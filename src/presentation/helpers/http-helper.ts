@@ -12,3 +12,7 @@ export const notFound = (error: Error): httpResponse => ({
   statusCode: 404,
   body: error
 })
+export const serverError = (error: Error): httpResponse => ({
+  statusCode: 500,
+  body: error
+})
